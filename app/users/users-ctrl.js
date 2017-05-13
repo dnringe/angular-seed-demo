@@ -19,7 +19,7 @@ function usersController(
 
     usersService.getUsers()
         .then(function (data) {
-            console.log('controller data', data);
+            console.log('controller data---', data);
             vm.users = data.data;
         }, function (error) {
             console.log(error);

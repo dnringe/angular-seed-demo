@@ -9,7 +9,7 @@ angular.module('myApp', [
   'ui.grid'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+  $locationProvider.hashPrefix('!'); 
 
   $routeProvider.otherwise({redirectTo: '/users'});
 }]);
