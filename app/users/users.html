@@ -1,0 +1,21 @@
+<h2>User Data</h2>
+<p ng-if="vm.dataerror">{{vm.dataerror}}</p>
+<div class="row">
+    <form>
+       <p>First name : <input type="text" ng-model="vm.user.firstname" class="form-control"/></p>
+       <p>Last name : <input type="text" ng-model="vm.user.lastname" class="form-control" /></p>
+       <button class="btn btn-primary" ng-click="vm.submit(vm.user)">Submit</button>       
+    </form>
+</div>
+<hr />
+
+<div ui-grid="{ data: vm.users }" class="myGrid"></div>
+
+<!--div class="container-fluid">
+<div class="row">
+    <div ng-repeat="user in vm.users">
+        <div class="col-xs-6">{{user.login}}</div>
+        <div class="col-xs-6"><img src="{{user.avatar_url}}" width="50"  /></div>
+    </div>
+</div>
+</div-->
